@@ -19,7 +19,7 @@ while val != 0:     #the loop exits when user enters 0
         try:
 
             # formatting the date using strptime() function
-            dateObject = datetime.datetime.strptime(userdata_date, date_format)
+            dateObj = datetime.datetime.strptime(userdata_date, date_format)
             
             temp_val=weather_data.temperature(userdata_date) # calling temperatue function from weather_data module
 
@@ -39,7 +39,7 @@ while val != 0:     #the loop exits when user enters 0
         try:
 
             # formatting the date using strptime() function
-            dateObject = datetime.datetime.strptime(userdata_date, date_format)
+            dateObj = datetime.datetime.strptime(userdata_date, date_format)
             
             windspeed_val=weather_data.windspeed(userdata_date) #calling windspeed function from weather_data module
 
@@ -60,7 +60,7 @@ while val != 0:     #the loop exits when user enters 0
         try:
 
             # formatting the date using strptime() function
-            dateObject = datetime.datetime.strptime(userdata_date, date_format)
+            dateObj = datetime.datetime.strptime(userdata_date, date_format)
             
             pressure_value=weather_data.pressure(userdata_date)
 
